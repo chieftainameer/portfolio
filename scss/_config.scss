@@ -51,3 +51,11 @@ $background-opacity: 0.9;
     @content;
   }
 }
+
+@function set_text_color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

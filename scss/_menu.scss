@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background-color: #fff;
+    background-color: set_text_color($primary-color);
     @include easeOut;
   }
 
@@ -83,6 +83,7 @@
       font-size: 1.5rem;
       .nav-link {
         display: inline-block;
+        color: set_text_color($primary-color);
         &.active {
           color: $secondary-text;
         }
